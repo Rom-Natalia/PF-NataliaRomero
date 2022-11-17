@@ -1,0 +1,54 @@
+.container {
+  background: map-get($fondos, fondo-1);
+  text-align: center;
+  padding: 1rem 0;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    align-items: center;
+  }
+
+  .nav {
+    padding-right: 5rem;
+    .nav___list {
+      @include flex-around;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      text-align: right;
+      padding: 1 rem;
+
+      .nav__link {
+        color: map-get($color-texto, text-1);
+        text-decoration: none;
+        padding-right: 1rem;
+        text-align: center;
+        margin: 0 10px 0 0;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .hamburguer__menu {
+    display: none;
+    #myLinks {
+      display: none;
+    }
+    .icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+  }
+}

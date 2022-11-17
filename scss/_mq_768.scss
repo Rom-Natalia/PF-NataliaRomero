@@ -1,0 +1,83 @@
+@media screen and (max-width: 968px) {
+  /*SECCION HOME INDEX*/
+  .conteiner__home {
+    .imagen__puente {
+      height: auto;
+    }
+    .intro__section {
+      flex-direction: column-reverse;
+      .info__section {
+        width: 100%;
+      }
+      .imagen__section {
+        width: 100%;
+      }
+    }
+    .intro__section.inspirarte {
+      flex-direction: column-reverse;
+    }
+  }
+
+  /*SECCION EQUIPO*/
+  .equipo__cards__container {
+    padding: 0;
+
+    .equipo__card {
+      box-sizing: border-box;
+      width: 100%;
+    }
+  }
+
+  .container {
+    display: block;
+
+    .row {
+      display: block;
+      .nav {
+        display: none;
+      }
+      .hamburguer__menu {
+        display: block;
+      }
+    }
+  }
+
+  /*SECCION INSPIRACION*/
+  .container__inspiracion {
+    .container__galeria {
+      .container__galeria__paisajes {
+        width: 100%;
+      }
+    }
+  }
+
+  /*SECCION SERVICIOS*/
+  .servicios__imagenes {
+    width: 100%;
+    height: auto;
+  }
+
+  /*SECCION NOSOTROS*/
+  .nosotros__imagen__puente {
+    height: auto;
+  }
+  .nosotros__intro__section {
+    flex-direction: column-reverse;
+    .nosotros__info__section {
+      width: 100%;
+    }
+    .nosotros__imagen__section {
+      width: 100%;
+    }
+  }
+  .nosotros__intro__section.inspirarte {
+    flex-direction: column-reverse;
+  }
+
+  /*SECCION CONTACTO*/
+  .contacto__body {
+    .contacto__form {
+      width: 90%;
+    }
+  }
+}

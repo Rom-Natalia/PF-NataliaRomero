@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background: black;
+  text-align: center;
+  padding: 1rem 0;
+}
+.container .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+  align-items: center;
+}
+.container .nav {
+  padding-right: 5rem;
+}
+.container .nav .nav___list {
+  display: flex;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-align: right;
+  padding: 1 rem;
+}
+.container .nav .nav___list .nav__link {
+  color: white;
+  text-decoration: none;
+  padding-right: 1rem;
+  text-align: center;
+  margin: 0 10px 0 0;
+  text-transform: uppercase;
+}
+.container .hamburguer__menu {
+  display: none;
+}
+.container .hamburguer__menu #myLinks {
+  display: none;
+}
+.container .hamburguer__menu .icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.container .hamburguer__menu a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.conteiner__home {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1320px;
+  align-items: center;
+}
+.conteiner__home .imagen__puente {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  height: 580px;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px -6px black;
+}
+.conteiner__home .intro__section {
+  display: flex;
+  max-width: 90%;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.conteiner__home .intro__section .info__section {
+  width: 40%;
+}
+.conteiner__home .intro__section .info__section .boton__inspirate {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 3px;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 5px;
+}
+.conteiner__home .intro__section .imagen__section {
+  width: 50%;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px -6px black;
+}
+.conteiner__home .intro__section.inspirarte {
+  flex-direction: row-reverse;
+}
+
+footer {
+  background: black;
+  text-align: center;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  font-weight: lighter;
+}
+footer .footer__iconos {
+  color: white;
+}
+footer .derechos__reservados .ig__Natalia {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.h1__subtitulos {
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin: 2rem 0 1rem 4rem;
+}
+
+.equipo__cards__container {
+  margin-bottom: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  display: flex;
+}
+.equipo__cards__container .equipo__card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex: 0 0 auto;
+  width: 25%;
+}
+.equipo__cards__container .equipo__card .equipo__card__individual {
+  margin: 0.5rem;
+  flex-shrink: 1;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1rem;
+}
+.equipo__cards__container .equipo__card .equipo__card__individual .equipo__card__texto {
+  margin: 1rem 0 1rem 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.equipo__cards__container .equipo__card .equipo__card__individual .equipo__card__texto .equipo__card__nombre {
+  font-size: large;
+}
+.equipo__cards__container .equipo__card .equipo__card__individual .boton__card {
+  border: none;
+  color: white;
+  padding: 11px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 3px;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.container__inspiracion .container__galeria {
+  display: flex;
+  justify-content: center;
+  padding: 0 5rem;
+  align-items: center;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  flex-direction: row;
+}
+.container__inspiracion .container__galeria .container__galeria__paisajes {
+  gap: 0;
+  vertical-align: middle;
+  flex: 0 0 auto;
+  width: 30%;
+  height: auto;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+.contacto__body {
+  background-image: url(../imagenes/puente.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+}
+.contacto__body .contacto__form {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+  backdrop-filter: blur(5px);
+}
+.contacto__body .contacto__form .contacto__h2 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.contacto__body .contacto__form .contacto__input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+.contacto__body .contacto__form .contacto__textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+  width: 100%;
+}
+.contacto__body .contacto__form #boton {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin-top: 1rem;
+  width: 100%;
+}
+.contacto__body .contacto__form #boton:hover {
+  cursor: pointer;
+}
+
+.nosotros__video {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.nosotros__intro__section {
+  display: flex;
+  max-width: 90%;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.nosotros__intro__section .nosotros__info__section {
+  width: 40%;
+}
+.nosotros__intro__section .nosotros__info__section .boton__inspirate {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 3px;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 5px;
+}
+.nosotros__intro__section .nosotros__imagen__section {
+  width: 50%;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px -6px black;
+}
+
+.nosotros__intro__section.inspirarte {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 968px) {
+  /*SECCION HOME INDEX*/
+  .conteiner__home .imagen__puente {
+    height: auto;
+  }
+  .conteiner__home .intro__section {
+    flex-direction: column-reverse;
+  }
+  .conteiner__home .intro__section .info__section {
+    width: 100%;
+  }
+  .conteiner__home .intro__section .imagen__section {
+    width: 100%;
+  }
+  .conteiner__home .intro__section.inspirarte {
+    flex-direction: column-reverse;
+  }
+  /*SECCION EQUIPO*/
+  .equipo__cards__container {
+    padding: 0;
+  }
+  .equipo__cards__container .equipo__card {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .container {
+    display: block;
+  }
+  .container .row {
+    display: block;
+  }
+  .container .row .nav {
+    display: none;
+  }
+  .container .row .hamburguer__menu {
+    display: block;
+  }
+  /*SECCION INSPIRACION*/
+  .container__inspiracion .container__galeria .container__galeria__paisajes {
+    width: 100%;
+  }
+  /*SECCION SERVICIOS*/
+  .servicios__imagenes {
+    width: 100%;
+    height: auto;
+  }
+  /*SECCION NOSOTROS*/
+  .nosotros__imagen__puente {
+    height: auto;
+  }
+  .nosotros__intro__section {
+    flex-direction: column-reverse;
+  }
+  .nosotros__intro__section .nosotros__info__section {
+    width: 100%;
+  }
+  .nosotros__intro__section .nosotros__imagen__section {
+    width: 100%;
+  }
+  .nosotros__intro__section.inspirarte {
+    flex-direction: column-reverse;
+  }
+  /*SECCION CONTACTO*/
+  .contacto__body .contacto__form {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

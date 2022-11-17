@@ -1,0 +1,57 @@
+.h1__subtitulos {
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin: 2rem 0 1rem 4rem;
+}
+
+.equipo__cards__container {
+  margin-bottom: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  display: flex;
+
+  .equipo__card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex: 0 0 auto;
+    width: 25%;
+
+    .equipo__card__individual {
+      margin: 0.5rem;
+      flex-shrink: 1;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      padding: 1rem;
+
+      .equipo__card__texto {
+        margin: 1rem 0 1rem 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+
+        .equipo__card__nombre {
+          font-size: large;
+        }
+      }
+
+      .boton__card {
+        border: none;
+        color: white;
+        padding: 11px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 5px 3px;
+        cursor: pointer;
+        background-color: black;
+        border-radius: 5px;
+      }
+    }
+  }
+}
