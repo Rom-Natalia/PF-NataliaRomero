@@ -163,12 +163,19 @@ main {
   min-width: 0;
   padding: 1rem;
 }
-.equipo__cards__container .equipo__card .equipo__card__individual .equipo__card__texto {
+.equipo__cards__container
+  .equipo__card
+  .equipo__card__individual
+  .equipo__card__texto {
   margin: 1rem 0 1rem 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-.equipo__cards__container .equipo__card .equipo__card__individual .equipo__card__texto .equipo__card__nombre {
+.equipo__cards__container
+  .equipo__card
+  .equipo__card__individual
+  .equipo__card__texto
+  .equipo__card__nombre {
   font-size: large;
 }
 .equipo__cards__container .equipo__card .equipo__card__individual .boton__card {
