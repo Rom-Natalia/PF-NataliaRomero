@@ -108,13 +108,99 @@
 footer {
   background: black;
   text-align: center;
-  color: white;
-  padding: 1rem 0;
+  padding: 5rem 0 1rem;
   margin-top: 3rem;
-  font-weight: lighter;
 }
 footer .footer__iconos {
+  display: inline-flex;
+}
+footer .footer__iconos .footer__iconos--icon {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+footer .footer__iconos .footer__iconos--icon:hover .footer__span i {
+  color: #fff;
+}
+footer .footer__iconos .footer__iconos--icon:hover .icon__red {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+footer .footer__iconos .footer__iconos--icon .footer__span {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+footer .footer__iconos .footer__iconos--icon .footer__span i {
+  font-size: 25px;
+  line-height: 60px;
+}
+footer .footer__iconos .footer__iconos--icon .icon__red {
+  position: absolute;
+  top: 0px;
+  background: #fff;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+footer .footer__iconos .footer__iconos--icon .icon__red::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  bottom: -8px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+footer .footer__iconos .twitter:hover .footer__span,
+footer .footer__iconos .twitter:hover .icon__red,
+footer .footer__iconos .twitter:hover .icon__red::before {
+  background: #46c1f6;
+}
+footer .footer__iconos .instagram:hover .footer__span,
+footer .footer__iconos .instagram:hover .icon__red,
+footer .footer__iconos .instagram:hover .icon__red::before {
+  background: #e1306c;
+}
+footer .footer__iconos .youtube:hover .footer__span,
+footer .footer__iconos .youtube:hover .icon__red,
+footer .footer__iconos .youtube:hover .icon__red::before {
+  background: #de463b;
+}
+footer .footer__iconos .facebook:hover .footer__span,
+footer .footer__iconos .facebook:hover .icon__red,
+footer .footer__iconos .facebook:hover .icon__red::before {
+  background: #3b5999;
+}
+footer .buscanos__redes {
   color: white;
+  padding: 1rem;
+  font-weight: lighter;
+}
+footer .derechos__reservados {
+  color: white;
+  font-weight: lighter;
 }
 footer .derechos__reservados .ig__Natalia {
   color: white;
