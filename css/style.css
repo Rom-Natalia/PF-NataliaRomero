@@ -406,6 +406,31 @@ main {
   flex-direction: row-reverse;
 }
 
+.servicios__escritura {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.servicios__escritura .servicios__escritura--tipeo {
+  width: 34ch;
+  animation: typing 2s steps(34), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 3em;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 @media screen and (max-width: 968px) {
   /*SECCION HOME INDEX*/
   .conteiner__home .imagen__puente {
