@@ -163,19 +163,12 @@ main {
   min-width: 0;
   padding: 1rem;
 }
-.equipo__cards__container
-  .equipo__card
-  .equipo__card__individual
-  .equipo__card__texto {
+.equipo__cards__container .equipo__card .equipo__card__individual .equipo__card__texto {
   margin: 1rem 0 1rem 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-.equipo__cards__container
-  .equipo__card
-  .equipo__card__individual
-  .equipo__card__texto
-  .equipo__card__nombre {
+.equipo__cards__container .equipo__card .equipo__card__individual .equipo__card__texto .equipo__card__nombre {
   font-size: large;
 }
 .equipo__cards__container .equipo__card .equipo__card__individual .boton__card {
@@ -202,6 +195,7 @@ main {
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
   flex-direction: row;
+  transition: all 500ms ease;
 }
 .container__inspiracion .container__galeria .container__galeria__paisajes {
   gap: 0;
@@ -211,6 +205,12 @@ main {
   height: auto;
   flex-direction: column;
   margin: 0.5rem;
+  cursor: pointer;
+  transition: all 500ms ease;
+  box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+}
+.container__inspiracion .container__galeria .container__galeria__paisajes:hover {
+  transform: scale(1.2);
 }
 
 .contacto__body {
@@ -258,6 +258,26 @@ main {
 }
 .contacto__body .contacto__form #boton:hover {
   cursor: pointer;
+}
+.contacto__body .btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.contacto__body .btn-wsp .btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
 }
 
 .nosotros__video {

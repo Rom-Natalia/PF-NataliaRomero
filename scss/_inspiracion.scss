@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     margin-top: calc(-1 * var(--bs-gutter-y));
     flex-direction: row;
+    transition: all 500ms ease;
 
     .container__galeria__paisajes {
       gap: 0;
@@ -18,6 +19,12 @@
       height: auto;
       flex-direction: column;
       margin: 0.5rem;
+      cursor: pointer;
+      transition: all 500ms ease;
+      box-shadow: 1px 10px 15px rgb(0, 0, 0, 0.5);
+    }
+    .container__galeria__paisajes:hover {
+      transform: scale(1.2);
     }
   }
 }
