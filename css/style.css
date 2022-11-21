@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -67,6 +68,7 @@
   /*SECCION IMAGEN PUENTE*/
   /*SECCIONES CARDS SOMOS AUKEL/INSPIRARTE*/
   /*SECCION PALABRA IDEAR*/
+  /*SECCION PROYECTOS*/
   /*SECCION 3 TARJETAS DE PROYECTOS*/
 }
 .conteiner__home .imagen__puente {
@@ -160,6 +162,20 @@
   -webkit-background-clip: text;
   font-family: "Anton", sans-serif;
   -webkit-text-fill-color: transparent;
+}
+.conteiner__home .div__proyectos {
+  background-color: black;
+  width: 100%;
+  height: 100px;
+}
+.conteiner__home .div__proyectos .proyectos__texto {
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
 }
 .conteiner__home .intro__section.tarjetas {
   width: 100%;

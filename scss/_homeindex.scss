@@ -115,6 +115,24 @@
     }
   }
 
+  /*SECCION PROYECTOS*/
+
+  .div__proyectos {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+
+    .proyectos__texto {
+      color: #fff;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      font-size: 30px;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+
   /*SECCION 3 TARJETAS DE PROYECTOS*/
 
   .intro__section.tarjetas {
