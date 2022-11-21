@@ -1,16 +1,19 @@
+/*SECCION VIDEO*/
 .nosotros__video {
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
-.nosotros__intro__section {
+/*SECCION CARDS NOSOTROS*/
+
+.nosotros__intro--section {
   display: flex;
   max-width: 90%;
   justify-content: space-between;
   padding: 2rem;
   flex-wrap: wrap;
-  .nosotros__info__section {
+  .nosotros__info--section {
     width: 40%;
 
     .boton__inspirate {
@@ -28,7 +31,7 @@
     }
   }
 
-  .nosotros__imagen__section {
+  .nosotros__imagen--section {
     width: 50%;
     margin-bottom: 2rem;
     border-radius: 5px;
@@ -36,6 +39,6 @@
   }
 }
 
-.nosotros__intro__section.inspirarte {
+.nosotros__intro--section.inspirarte {
   flex-direction: row-reverse;
 }

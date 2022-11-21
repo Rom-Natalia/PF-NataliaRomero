@@ -12,7 +12,7 @@
 
   .nav {
     padding-right: 5rem;
-    .nav___list {
+    .nav__list {
       @include flex-around;
       display: flex;
       flex-direction: row;

@@ -4,7 +4,9 @@
   margin: 2rem 0 1rem 4rem;
 }
 
-.equipo__cards__container {
+/* COMIENZAN LAS CARDS */
+
+.equipo__cards--container {
   margin-bottom: 3rem;
   justify-content: center;
   flex-wrap: wrap;
@@ -18,7 +20,7 @@
     flex: 0 0 auto;
     width: 25%;
 
-    .equipo__card__individual {
+    .equipo__card--individual {
       margin: 0.5rem;
       flex-shrink: 1;
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -29,12 +31,12 @@
       min-width: 0;
       padding: 1rem;
 
-      .equipo__card__texto {
+      .equipo__card--texto {
         margin: 1rem 0 1rem 0;
         padding: 0;
         font-family: "Poppins", sans-serif;
 
-        .equipo__card__nombre {
+        .equipo__card--nombre {
           font-size: large;
         }
       }
@@ -51,6 +53,71 @@
         cursor: pointer;
         background-color: black;
         border-radius: 5px;
+      }
+    }
+  }
+}
+
+/* COMIENZAN LA ANIMACION TEXTO */
+
+.equipo__animacion--txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #000;
+
+  .wrapper {
+    display: inline-flex;
+
+    .static-txt {
+      color: #fff;
+      font-size: 60px;
+      font-weight: 400;
+    }
+
+    .dynamic-txts {
+      margin-left: 15px;
+      height: 90px;
+      line-height: 90px;
+      overflow: hidden;
+
+      .equipo__li {
+        color: #f5fc69;
+        list-style: none;
+        font-size: 60px;
+        font-weight: 500;
+        position: relative;
+        top: 0;
+        animation: slide 6s steps(4) infinite;
+
+        .equipo__span {
+          position: relative;
+        }
+
+        .equipo__span::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          height: 100%;
+          background: #000;
+          width: 100%;
+          border-left: 2px solid #f5fc69;
+          animation: typing 1.5s steps(10) infinite;
+        }
+
+        @keyframes slide {
+          100% {
+            top: -360px;
+          }
+        }
+
+        @keyframes typing {
+          100% {
+            left: 100%;
+            margin: 0 -35px 0 35px;
+          }
+        }
       }
     }
   }

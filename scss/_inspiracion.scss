@@ -11,7 +11,7 @@
     flex-direction: row;
     transition: all 500ms ease;
 
-    .container__galeria__paisajes {
+    .container__galeria--paisajes {
       gap: 0;
       vertical-align: middle;
       flex: 0 0 auto;
@@ -23,7 +23,7 @@
       transition: all 500ms ease;
       box-shadow: 1px 10px 15px rgb(0, 0, 0, 0.5);
     }
-    .container__galeria__paisajes:hover {
+    .container__galeria--paisajes:hover {
       transform: scale(1.2);
     }
   }

@@ -20,7 +20,7 @@
 .container .nav {
   padding-right: 5rem;
 }
-.container .nav .nav___list {
+.container .nav .nav__list {
   display: flex;
   justify-content: space-around;
   display: flex;
@@ -29,7 +29,7 @@
   text-align: right;
   padding: 1 rem;
 }
-.container .nav .nav___list .nav__link {
+.container .nav .nav__list .nav__link {
   color: white;
   text-decoration: none;
   padding-right: 1rem;
@@ -328,21 +328,22 @@ main {
   margin: 2rem 0 1rem 4rem;
 }
 
-.equipo__cards__container {
+/* COMIENZAN LAS CARDS */
+.equipo__cards--container {
   margin-bottom: 3rem;
   justify-content: center;
   flex-wrap: wrap;
   box-sizing: border-box;
   display: flex;
 }
-.equipo__cards__container .equipo__card {
+.equipo__cards--container .equipo__card {
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
   flex: 0 0 auto;
   width: 25%;
 }
-.equipo__cards__container .equipo__card .equipo__card__individual {
+.equipo__cards--container .equipo__card .equipo__card--individual {
   margin: 0.5rem;
   flex-shrink: 1;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -353,15 +354,15 @@ main {
   min-width: 0;
   padding: 1rem;
 }
-.equipo__cards__container .equipo__card .equipo__card__individual .equipo__card__texto {
+.equipo__cards--container .equipo__card .equipo__card--individual .equipo__card--texto {
   margin: 1rem 0 1rem 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-.equipo__cards__container .equipo__card .equipo__card__individual .equipo__card__texto .equipo__card__nombre {
+.equipo__cards--container .equipo__card .equipo__card--individual .equipo__card--texto .equipo__card--nombre {
   font-size: large;
 }
-.equipo__cards__container .equipo__card .equipo__card__individual .boton__card {
+.equipo__cards--container .equipo__card .equipo__card--individual .boton__card {
   border: none;
   color: white;
   padding: 11px 30px;
@@ -373,6 +374,62 @@ main {
   cursor: pointer;
   background-color: black;
   border-radius: 5px;
+}
+
+/* COMIENZAN LA ANIMACION TEXTO */
+.equipo__animacion--txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #000;
+}
+.equipo__animacion--txt .wrapper {
+  display: inline-flex;
+}
+.equipo__animacion--txt .wrapper .static-txt {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.equipo__animacion--txt .wrapper .dynamic-txts {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.equipo__animacion--txt .wrapper .dynamic-txts .equipo__li {
+  color: #f5fc69;
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(4) infinite;
+}
+.equipo__animacion--txt .wrapper .dynamic-txts .equipo__li .equipo__span {
+  position: relative;
+}
+.equipo__animacion--txt .wrapper .dynamic-txts .equipo__li .equipo__span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background: #000;
+  width: 100%;
+  border-left: 2px solid #f5fc69;
+  animation: typing 1.5s steps(10) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
 }
 
 .container__inspiracion .container__galeria {
@@ -387,7 +444,7 @@ main {
   flex-direction: row;
   transition: all 500ms ease;
 }
-.container__inspiracion .container__galeria .container__galeria__paisajes {
+.container__inspiracion .container__galeria .container__galeria--paisajes {
   gap: 0;
   vertical-align: middle;
   flex: 0 0 auto;
@@ -399,7 +456,7 @@ main {
   transition: all 500ms ease;
   box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
 }
-.container__inspiracion .container__galeria .container__galeria__paisajes:hover {
+.container__inspiracion .container__galeria .container__galeria--paisajes:hover {
   transform: scale(1.2);
 }
 
@@ -470,23 +527,25 @@ main {
   background: #fff;
 }
 
+/*SECCION VIDEO*/
 .nosotros__video {
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
-.nosotros__intro__section {
+/*SECCION CARDS NOSOTROS*/
+.nosotros__intro--section {
   display: flex;
   max-width: 90%;
   justify-content: space-between;
   padding: 2rem;
   flex-wrap: wrap;
 }
-.nosotros__intro__section .nosotros__info__section {
+.nosotros__intro--section .nosotros__info--section {
   width: 40%;
 }
-.nosotros__intro__section .nosotros__info__section .boton__inspirate {
+.nosotros__intro--section .nosotros__info--section .boton__inspirate {
   border: none;
   color: white;
   padding: 15px 32px;
@@ -499,14 +558,14 @@ main {
   background-color: black;
   border-radius: 5px;
 }
-.nosotros__intro__section .nosotros__imagen__section {
+.nosotros__intro--section .nosotros__imagen--section {
   width: 50%;
   margin-bottom: 2rem;
   border-radius: 5px;
   box-shadow: 0px 10px 10px -6px black;
 }
 
-.nosotros__intro__section.inspirarte {
+.nosotros__intro--section.inspirarte {
   flex-direction: row-reverse;
 }
 
@@ -553,10 +612,10 @@ main {
     flex-direction: column-reverse;
   }
   /*SECCION EQUIPO*/
-  .equipo__cards__container {
+  .equipo__cards--container {
     padding: 0;
   }
-  .equipo__cards__container .equipo__card {
+  .equipo__cards--container .equipo__card {
     box-sizing: border-box;
     width: 100%;
   }
@@ -573,7 +632,7 @@ main {
     display: block;
   }
   /*SECCION INSPIRACION*/
-  .container__inspiracion .container__galeria .container__galeria__paisajes {
+  .container__inspiracion .container__galeria .container__galeria--paisajes {
     width: 100%;
   }
   /*SECCION SERVICIOS*/
@@ -582,19 +641,19 @@ main {
     height: auto;
   }
   /*SECCION NOSOTROS*/
-  .nosotros__imagen__puente {
+  .nosotros__imagen--puente {
     height: auto;
   }
-  .nosotros__intro__section {
+  .nosotros__intro--section {
     flex-direction: column-reverse;
   }
-  .nosotros__intro__section .nosotros__info__section {
+  .nosotros__intro--section .nosotros__info--section {
     width: 100%;
   }
-  .nosotros__intro__section .nosotros__imagen__section {
+  .nosotros__intro--section .nosotros__imagen--section {
     width: 100%;
   }
-  .nosotros__intro__section.inspirarte {
+  .nosotros__intro--section.inspirarte {
     flex-direction: column-reverse;
   }
   /*SECCION CONTACTO*/
