@@ -407,6 +407,11 @@ main {
   top: 0;
   animation: slide 6s steps(4) infinite;
 }
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
 .equipo__animacion--txt .wrapper .dynamic-txts .equipo__li .equipo__span {
   position: relative;
 }
@@ -418,14 +423,9 @@ main {
   background: #000;
   width: 100%;
   border-left: 2px solid #f5fc69;
-  animation: typing 1.5s steps(10) infinite;
+  animation: typing1 1.5s steps(10) infinite;
 }
-@keyframes slide {
-  100% {
-    top: -360px;
-  }
-}
-@keyframes typing {
+@keyframes typing1 {
   100% {
     left: 100%;
     margin: 0 -35px 0 35px;

@@ -91,31 +91,31 @@
         top: 0;
         animation: slide 6s steps(4) infinite;
 
-        .equipo__span {
-          position: relative;
-        }
-
-        .equipo__span::after {
-          content: "";
-          position: absolute;
-          left: 0;
-          height: 100%;
-          background: #000;
-          width: 100%;
-          border-left: 2px solid #f5fc69;
-          animation: typing 1.5s steps(10) infinite;
-        }
-
         @keyframes slide {
           100% {
             top: -360px;
           }
         }
 
-        @keyframes typing {
-          100% {
-            left: 100%;
-            margin: 0 -35px 0 35px;
+        .equipo__span {
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 100%;
+            background: #000;
+            width: 100%;
+            border-left: 2px solid #f5fc69;
+            animation: typing1 1.5s steps(10) infinite;
+
+            @keyframes typing1 {
+              100% {
+                left: 100%;
+                margin: 0 -35px 0 35px;
+              }
+            }
           }
         }
       }
