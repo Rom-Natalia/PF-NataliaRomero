@@ -307,7 +307,7 @@ footer .derechos__reservados {
   font-weight: lighter;
 }
 footer .derechos__reservados .ig__Natalia {
-  color: white;
+  color: #f5fc69;
   text-decoration: none;
 }
 
@@ -422,7 +422,7 @@ main {
   height: 100%;
   background: #000;
   width: 100%;
-  border-left: 2px solid #f5fc69;
+  border-left: 4px solid #f5fc69;
   animation: typing1 1.5s steps(10) infinite;
 }
 @keyframes typing1 {
