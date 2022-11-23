@@ -16,18 +16,39 @@
   .nosotros__info--section {
     width: 40%;
 
-    .boton__inspirate {
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 5px 3px;
+    .boton__inspirate--nosotros {
+      border: 2px solid rgb(0, 0, 0);
+      background: none;
+      color: map-get($fondos, fondo-1);
       cursor: pointer;
-      background-color: black;
-      border-radius: 5px;
+      font-size: 25px;
+      text-transform: uppercase;
+      padding: 20px 40px;
+      margin: 20px 0px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0%;
+        width: 100%;
+        background-color: map-get($fondos, fondo-1);
+        z-index: -1;
+        border-radius: 0 0 50% 50%;
+        transition: all 0.5s;
+      }
+
+      &:hover::before {
+        height: 190%;
+      }
+
+      &:hover {
+        color: white;
+      }
     }
   }
 

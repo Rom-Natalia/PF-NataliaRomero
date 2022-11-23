@@ -14,7 +14,7 @@
     backdrop-filter: blur(5px);
 
     .contacto__h2 {
-      color: white;
+      color: map-get($color-texto, text-1);
       text-align: center;
       margin: 0;
       font-size: 30px;
@@ -38,8 +38,8 @@
     }
 
     #boton {
-      background-color: black;
-      color: white;
+      background-color: map-get($fondos, fondo-1);
+      color: map-get($color-texto, text-1);
       padding: 20px;
       margin-top: 1rem;
       width: 100%;
@@ -58,7 +58,7 @@
     bottom: 30px;
     right: 30px;
     background: #0df053;
-    color: #fff;
+    color: map-get($color-texto, text-1);
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
@@ -68,7 +68,7 @@
     .btn-wsp:hover {
       text-decoration: none;
       color: #0df053;
-      background: #fff;
+      background: map-get($fondos, fondo-2);
     }
   }
 }

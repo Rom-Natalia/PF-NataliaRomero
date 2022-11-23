@@ -19,7 +19,7 @@ footer {
       transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
       &:hover .footer__span i {
-        color: #fff;
+        color: map-get($color-texto, text-1);
       }
 
       &:hover .icon__red {
@@ -34,7 +34,7 @@ footer {
         height: 60px;
         width: 60px;
         display: block;
-        background: #fff;
+        background: map-get($fondos, fondo-2);
         border-radius: 50%;
         text-align: center;
         z-index: 2;
@@ -47,8 +47,8 @@ footer {
       .icon__red {
         position: absolute;
         top: 0px;
-        background: #fff;
-        color: #fff;
+        background: map-get($fondos, fondo-2);
+        color: map-get($color-texto, text-1);
         font-size: 20px;
         padding: 10px 18px;
         border-radius: 25px;
@@ -62,7 +62,7 @@ footer {
           content: "";
           height: 15px;
           width: 15px;
-          background: #fff;
+          background: map-get($fondos, text-2);
           bottom: -8px;
           left: 50%;
           transform: translate(-50%) rotate(45deg);
@@ -105,7 +105,7 @@ footer {
     color: map-get($color-texto, text-1);
     font-weight: lighter;
     .ig__Natalia {
-      color: #f5fc69;
+      color: map-get($color-texto, text-2);
       text-decoration: none;
     }
   }

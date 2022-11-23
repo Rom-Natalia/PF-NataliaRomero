@@ -9,7 +9,7 @@
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
-    font-family: monospace;
+    font-family: map-get($tipografias, tipografia-3);
     font-size: 3em;
   }
   @keyframes typing {
