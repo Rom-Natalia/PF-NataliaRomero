@@ -1,9 +1,12 @@
 @media screen and (max-width: 968px) {
   /*SECCION HOME INDEX*/
   .conteiner__home {
-    .imagen__puente {
-      height: auto;
+    .herobanner__section {
+      .imagen__puente {
+        height: auto;
+      }
     }
+
     .intro__section {
       flex-direction: column-reverse;
       .info__section {
@@ -15,6 +18,12 @@
     }
     .intro__section.inspirarte {
       flex-direction: column-reverse;
+    }
+
+    .intro__section--idear {
+      .idear__texto {
+        font-size: 110px;
+      }
     }
   }
 
