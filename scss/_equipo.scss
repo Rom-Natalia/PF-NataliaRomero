@@ -89,7 +89,7 @@
         font-weight: 500;
         position: relative;
         top: 0;
-        animation: slide 6s steps(4) infinite;
+        animation: slide 7s steps(4) infinite;
 
         @keyframes slide {
           100% {
@@ -108,7 +108,7 @@
             background: #000;
             width: 100%;
             border-left: 4px solid #f5fc69;
-            animation: typing1 1.5s steps(10) infinite;
+            animation: typing1 2.5s steps(10) infinite;
 
             @keyframes typing1 {
               100% {

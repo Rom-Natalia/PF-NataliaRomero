@@ -23,6 +23,13 @@
     .intro__section--idear {
       .idear__texto {
         font-size: 110px;
+        line-height: 120px;
+      }
+    }
+
+    .tarjetas {
+      .tajetas__contenedor {
+        justify-content: center;
       }
     }
   }
@@ -66,6 +73,15 @@
     height: auto;
   }
 
+  .servicios__escritura {
+    .servicios__escritura--tipeo {
+      font-size: 1.2rem;
+      /*   width: 100%;
+      text-align: center;
+      white-space: normal; */
+    }
+  }
+
   /*SECCION NOSOTROS*/
   .nosotros__imagen--puente {
     height: auto;
@@ -87,6 +103,21 @@
   .contacto__body {
     .contacto__form {
       width: 90%;
+    }
+  }
+
+  /*FOOTER*/
+
+  footer {
+    .footer__iconos {
+      .footer__iconos--icon {
+        margin: 0 10px;
+      }
+    }
+
+    .derechos__reservados {
+      max-width: 76%;
+      margin: auto;
     }
   }
 }

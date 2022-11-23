@@ -1,65 +1,84 @@
 /*SECCION VIDEO*/
-.nosotros__video {
-  justify-content: center;
+.conteiner__nosotros {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
   align-items: center;
-  display: flex;
-}
 
-/*SECCION CARDS NOSOTROS*/
+  section {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+    display: flex;
+  }
 
-.nosotros__intro--section {
-  display: flex;
-  max-width: 90%;
-  justify-content: space-between;
-  padding: 2rem;
-  flex-wrap: wrap;
-  .nosotros__info--section {
-    width: 40%;
+  .nosotros__video {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
 
-    .boton__inspirate--nosotros {
-      border: 2px solid rgb(0, 0, 0);
-      background: none;
-      color: map-get($fondos, fondo-1);
-      cursor: pointer;
-      font-size: 25px;
-      text-transform: uppercase;
-      padding: 20px 40px;
-      margin: 20px 0px;
-      position: relative;
-      overflow: hidden;
-      transition: all 0.5s;
+  /*SECCION CARDS NOSOTROS*/
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 0%;
-        width: 100%;
-        background-color: map-get($fondos, fondo-1);
-        z-index: -1;
-        border-radius: 0 0 50% 50%;
+  .nosotros__intro--section {
+    display: flex;
+    max-width: 70%;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex-wrap: wrap;
+
+    .nosotros__info--section {
+      width: 45%;
+
+      .boton__inspirate--nosotros {
+        border: 2px solid rgb(0, 0, 0);
+        background: none;
+        color: map-get($fondos, fondo-1);
+        cursor: pointer;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 15px 20px;
+        margin: 20px 0px;
+        position: relative;
+        overflow: hidden;
         transition: all 0.5s;
-      }
 
-      &:hover::before {
-        height: 190%;
-      }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 0%;
+          width: 100%;
+          background-color: map-get($fondos, fondo-1);
+          z-index: -1;
+          border-radius: 0 0 50% 50%;
+          transition: all 0.5s;
+        }
 
-      &:hover {
-        color: white;
+        &:hover::before {
+          height: 190%;
+        }
+
+        &:hover {
+          color: white;
+        }
       }
+    }
+
+    .nosotros__imagen--section {
+      width: 45%;
+      margin-bottom: 2rem;
+      border-radius: 5px;
+      box-shadow: 0px 10px 10px -6px black;
     }
   }
 
-  .nosotros__imagen--section {
-    width: 50%;
-    margin-bottom: 2rem;
-    border-radius: 5px;
-    box-shadow: 0px 10px 10px -6px black;
+  .nosotros__intro--section.inspirarte {
+    flex-direction: row-reverse;
   }
-}
-
-.nosotros__intro--section.inspirarte {
-  flex-direction: row-reverse;
 }

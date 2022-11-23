@@ -109,9 +109,9 @@
   background: none;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  font-size: 25px;
+  font-size: 15px;
   text-transform: uppercase;
-  padding: 20px 40px;
+  padding: 15px 20px;
   margin: 20px 0px;
   position: relative;
   overflow: hidden;
@@ -234,11 +234,12 @@
 footer {
   background: black;
   text-align: center;
-  padding: 5rem 0 1rem;
+  padding: 5rem 1rem 1rem;
   margin-top: 3rem;
 }
 footer .footer__iconos {
   display: inline-flex;
+  flex-wrap: wrap;
 }
 footer .footer__iconos .footer__iconos--icon {
   margin: 0 20px;
@@ -426,7 +427,7 @@ main {
   font-weight: 500;
   position: relative;
   top: 0;
-  animation: slide 6s steps(4) infinite;
+  animation: slide 7s steps(4) infinite;
 }
 @keyframes slide {
   100% {
@@ -444,7 +445,7 @@ main {
   background: #000;
   width: 100%;
   border-left: 4px solid #f5fc69;
-  animation: typing1 1.5s steps(10) infinite;
+  animation: typing1 2.5s steps(10) infinite;
 }
 @keyframes typing1 {
   100% {
@@ -549,37 +550,52 @@ main {
 }
 
 /*SECCION VIDEO*/
-.nosotros__video {
+.conteiner__nosotros {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  align-items: center;
+  /*SECCION CARDS NOSOTROS*/
+}
+.conteiner__nosotros section {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+  display: flex;
+}
+.conteiner__nosotros .nosotros__video {
   justify-content: center;
   align-items: center;
   display: flex;
 }
-
-/*SECCION CARDS NOSOTROS*/
-.nosotros__intro--section {
+.conteiner__nosotros .nosotros__intro--section {
   display: flex;
-  max-width: 90%;
+  max-width: 70%;
   justify-content: space-between;
-  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   flex-wrap: wrap;
 }
-.nosotros__intro--section .nosotros__info--section {
-  width: 40%;
+.conteiner__nosotros .nosotros__intro--section .nosotros__info--section {
+  width: 45%;
 }
-.nosotros__intro--section .nosotros__info--section .boton__inspirate--nosotros {
+.conteiner__nosotros .nosotros__intro--section .nosotros__info--section .boton__inspirate--nosotros {
   border: 2px solid rgb(0, 0, 0);
   background: none;
   color: black;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 15px;
   text-transform: uppercase;
-  padding: 20px 40px;
+  padding: 15px 20px;
   margin: 20px 0px;
   position: relative;
   overflow: hidden;
   transition: all 0.5s;
 }
-.nosotros__intro--section .nosotros__info--section .boton__inspirate--nosotros::before {
+.conteiner__nosotros .nosotros__intro--section .nosotros__info--section .boton__inspirate--nosotros::before {
   content: "";
   position: absolute;
   top: 0;
@@ -591,20 +607,19 @@ main {
   border-radius: 0 0 50% 50%;
   transition: all 0.5s;
 }
-.nosotros__intro--section .nosotros__info--section .boton__inspirate--nosotros:hover::before {
+.conteiner__nosotros .nosotros__intro--section .nosotros__info--section .boton__inspirate--nosotros:hover::before {
   height: 190%;
 }
-.nosotros__intro--section .nosotros__info--section .boton__inspirate--nosotros:hover {
+.conteiner__nosotros .nosotros__intro--section .nosotros__info--section .boton__inspirate--nosotros:hover {
   color: white;
 }
-.nosotros__intro--section .nosotros__imagen--section {
-  width: 50%;
+.conteiner__nosotros .nosotros__intro--section .nosotros__imagen--section {
+  width: 45%;
   margin-bottom: 2rem;
   border-radius: 5px;
   box-shadow: 0px 10px 10px -6px black;
 }
-
-.nosotros__intro--section.inspirarte {
+.conteiner__nosotros .nosotros__intro--section.inspirarte {
   flex-direction: row-reverse;
 }
 
@@ -652,6 +667,10 @@ main {
   }
   .conteiner__home .intro__section--idear .idear__texto {
     font-size: 110px;
+    line-height: 120px;
+  }
+  .conteiner__home .tarjetas .tajetas__contenedor {
+    justify-content: center;
   }
   /*SECCION EQUIPO*/
   .equipo__cards--container {
@@ -682,6 +701,12 @@ main {
     width: 100%;
     height: auto;
   }
+  .servicios__escritura .servicios__escritura--tipeo {
+    font-size: 1.2rem;
+    /*   width: 100%;
+    text-align: center;
+    white-space: normal; */
+  }
   /*SECCION NOSOTROS*/
   .nosotros__imagen--puente {
     height: auto;
@@ -701,6 +726,14 @@ main {
   /*SECCION CONTACTO*/
   .contacto__body .contacto__form {
     width: 90%;
+  }
+  /*FOOTER*/
+  footer .footer__iconos .footer__iconos--icon {
+    margin: 0 10px;
+  }
+  footer .derechos__reservados {
+    max-width: 76%;
+    margin: auto;
   }
 }
 
