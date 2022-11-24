@@ -350,6 +350,48 @@ main {
   margin: 2rem 0 1rem 4rem;
 }
 
+/* COMIENZAN LA ANIMACION TEXTO */
+.equipo__animacion--txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #000;
+}
+.equipo__animacion--txt .wrapper {
+  display: inline-flex;
+}
+.equipo__animacion--txt .wrapper .static-txt {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.equipo__animacion--txt .wrapper .dynamic-txts {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.equipo__animacion--txt .wrapper .dynamic-txts .equipo__li {
+  color: #f5fc69;
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 3s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.equipo__animacion--txt .wrapper .dynamic-txts .equipo__li .equipo__span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
 /* COMIENZAN LAS CARDS */
 .equipo__cards--container {
   margin-bottom: 3rem;
@@ -398,48 +440,7 @@ main {
   border-radius: 5px;
 }
 
-/* COMIENZAN LA ANIMACION TEXTO */
-.equipo__animacion--txt {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: #000;
-}
-.equipo__animacion--txt .wrapper {
-  display: inline-flex;
-}
-.equipo__animacion--txt .wrapper .static-txt {
-  color: #fff;
-  font-size: 60px;
-  font-weight: 400;
-}
-.equipo__animacion--txt .wrapper .dynamic-txts {
-  margin-left: 15px;
-  height: 90px;
-  line-height: 90px;
-  overflow: hidden;
-}
-.equipo__animacion--txt .wrapper .dynamic-txts .equipo__li {
-  color: #f5fc69;
-  list-style: none;
-  font-size: 60px;
-  font-weight: 500;
-  position: relative;
-  top: 0;
-  animation: slide 3s steps(4) infinite;
-}
-@keyframes slide {
-  100% {
-    top: -360px;
-  }
-}
-.equipo__animacion--txt .wrapper .dynamic-txts .equipo__li .equipo__span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-}
-
+/* COMIENZAN LAS CARDS PROYECTOS */
 .container__inspiracion .container__galeria {
   display: flex;
   justify-content: center;
@@ -662,6 +663,72 @@ main {
   50% {
     border-color: transparent;
   }
+}
+
+.section__tarjetas {
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.section__tarjetas .div__proyectos {
+  background-color: black;
+  width: 100%;
+  height: 100px;
+}
+.section__tarjetas .div__proyectos .proyectos__texto {
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.section__tarjetas .tajetas__contenedor {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.section__tarjetas .tajetas__contenedor .info__section--tarjetas {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  border: 3px solid #fff;
+}
+.section__tarjetas .tajetas__contenedor .info__section--tarjetas .info__section--img {
+  width: 100%;
+  height: 100%;
+}
+.section__tarjetas .tajetas__contenedor .info__section--tarjetas:hover .capa {
+  transform: scale(1);
+}
+.section__tarjetas .tajetas__contenedor .info__section--tarjetas .capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+.section__tarjetas .tajetas__contenedor .info__section--tarjetas .capa .capa__enlaces {
+  text-decoration: none;
+  color: #fff;
 }
 
 @media screen and (max-width: 968px) {
