@@ -70,7 +70,7 @@
       }
 
       .boton__inspirate--nosotros {
-        border: 2px solid rgb(0, 0, 0);
+        border: 2px solid map-get($fondos, fondo-1);
         background: none;
         color: map-get($fondos, fondo-1);
         cursor: pointer;
@@ -100,7 +100,7 @@
         }
 
         &:hover {
-          color: white;
+          color: map-get($fondos, fondo-2);
         }
       }
     }
@@ -109,7 +109,7 @@
       width: 45%;
       margin-bottom: 2rem;
       border-radius: 5px;
-      box-shadow: 0px 10px 10px -6px black;
+      box-shadow: 0px 10px 10px -6px map-get($fondos, fondo-1);
     }
   }
 

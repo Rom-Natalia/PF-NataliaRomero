@@ -11,13 +11,13 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #000;
+  background: map-get($fondos, fondo-1);
 
   .wrapper {
     display: inline-flex;
 
     .static-txt {
-      color: #fff;
+      color: map-get($color-texto, text-1);
       font-size: 60px;
       font-weight: 400;
     }
@@ -29,7 +29,7 @@
       overflow: hidden;
 
       .equipo__li {
-        color: #f5fc69;
+        color: map-get($color-texto, text-2);
         list-style: none;
         font-size: 60px;
         font-weight: 500;
@@ -108,5 +108,3 @@
 }
 
 /* COMIENZAN LAS CARDS PROYECTOS */
-
-

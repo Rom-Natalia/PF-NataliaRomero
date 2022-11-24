@@ -57,7 +57,7 @@
     line-height: 55px;
     bottom: 30px;
     right: 30px;
-    background: #0df053;
+    background: map-get($fondos, fondo-3);
     color: map-get($color-texto, text-1);
     border-radius: 50px;
     text-align: center;
@@ -67,7 +67,7 @@
 
     .btn-wsp:hover {
       text-decoration: none;
-      color: #0df053;
+      color: map-get($fondos, fondo-3);
       background: map-get($fondos, fondo-2);
     }
   }

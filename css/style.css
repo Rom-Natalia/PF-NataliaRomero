@@ -6,11 +6,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* @mixin dis-ali-jus {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 .container {
   background: black;
   text-align: center;
@@ -356,13 +351,13 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #000;
+  background: black;
 }
 .equipo__animacion--txt .wrapper {
   display: inline-flex;
 }
 .equipo__animacion--txt .wrapper .static-txt {
-  color: #fff;
+  color: white;
   font-size: 60px;
   font-weight: 400;
 }
@@ -600,7 +595,7 @@ main {
   margin-top: 2rem;
 }
 .conteiner__nosotros .nosotros__intro--section .nosotros__info--section .boton__inspirate--nosotros {
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid black;
   background: none;
   color: black;
   cursor: pointer;
