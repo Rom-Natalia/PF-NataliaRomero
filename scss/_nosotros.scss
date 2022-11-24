@@ -23,6 +23,35 @@
     height: 100%;
   }
 
+  .lines__effects {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 40px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .lines__effects::after,
+  .lines__effects::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 6px;
+    background-color: map-get($fondos, fondo-1);
+    top: 2.6em;
+  }
+
+  .lines__effects::before {
+    left: -132px;
+  }
+
+  .lines__effects::after {
+    right: -132px;
+  }
+
   /*SECCION CARDS NOSOTROS*/
 
   .nosotros__intro--section {
@@ -35,6 +64,10 @@
 
     .nosotros__info--section {
       width: 45%;
+
+      .texto__dos {
+        margin-top: 2rem;
+      }
 
       .boton__inspirate--nosotros {
         border: 2px solid rgb(0, 0, 0);

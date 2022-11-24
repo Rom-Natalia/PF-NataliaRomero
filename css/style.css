@@ -573,6 +573,31 @@ main {
   width: 100%;
   height: 100%;
 }
+.conteiner__nosotros .lines__effects {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  font-family: monospace;
+  font-weight: 100;
+  font-size: 40px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.conteiner__nosotros .lines__effects::after,
+.conteiner__nosotros .lines__effects::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 6px;
+  background-color: black;
+  top: 2.6em;
+}
+.conteiner__nosotros .lines__effects::before {
+  left: -132px;
+}
+.conteiner__nosotros .lines__effects::after {
+  right: -132px;
+}
 .conteiner__nosotros .nosotros__intro--section {
   display: flex;
   max-width: 70%;
@@ -583,6 +608,9 @@ main {
 }
 .conteiner__nosotros .nosotros__intro--section .nosotros__info--section {
   width: 45%;
+}
+.conteiner__nosotros .nosotros__intro--section .nosotros__info--section .texto__dos {
+  margin-top: 2rem;
 }
 .conteiner__nosotros .nosotros__intro--section .nosotros__info--section .boton__inspirate--nosotros {
   border: 2px solid rgb(0, 0, 0);
