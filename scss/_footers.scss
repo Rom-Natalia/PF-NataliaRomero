@@ -74,25 +74,25 @@ footer {
     & .twitter:hover .footer__span,
     .twitter:hover .icon__red,
     .twitter:hover .icon__red::before {
-      background: #46c1f6;
+      background: map-get($fondos, fondo-tw);
     }
 
     & .instagram:hover .footer__span,
     .instagram:hover .icon__red,
     .instagram:hover .icon__red::before {
-      background: #e1306c;
+      background: map-get($fondos, fondo-ig);
     }
 
     & .youtube:hover .footer__span,
     .youtube:hover .icon__red,
     .youtube:hover .icon__red::before {
-      background: #de463b;
+      background: map-get($fondos, fondo-yt);
     }
 
     & .facebook:hover .footer__span,
     .facebook:hover .icon__red,
     .facebook:hover .icon__red::before {
-      background: #3b5999;
+      background: map-get($fondos, fondo-fb);
     }
   }
 
