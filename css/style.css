@@ -517,15 +517,15 @@ main {
   line-height: 55px;
   bottom: 30px;
   right: 30px;
-  background: #0df053;
-  color: white;
+  background: white;
+  color: black;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
-.contacto__body .btn-wsp .btn-wsp:hover {
+.contacto__body .btn-wsp:hover {
   text-decoration: none;
   color: #0df053;
   background: white;
