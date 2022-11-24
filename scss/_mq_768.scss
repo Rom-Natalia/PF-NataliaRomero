@@ -86,17 +86,40 @@
   .nosotros__imagen--puente {
     height: auto;
   }
-  .nosotros__intro--section {
-    flex-direction: column-reverse;
-    .nosotros__info--section {
-      width: 100%;
+
+  .conteiner__nosotros {
+    .lines__effects {
+      font-size: 25px;
     }
-    .nosotros__imagen--section {
-      width: 100%;
+
+    .lines__effects::after,
+    .lines__effects::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      top: 4.6em;
     }
-  }
-  .nosotros__intro--section.inspirarte {
-    flex-direction: column-reverse;
+
+    .lines__effects::before {
+      left: 16px;
+    }
+
+    .lines__effects::after {
+      right: 16px;
+    }
+
+    .nosotros__intro--section {
+      flex-direction: column-reverse;
+      .nosotros__info--section {
+        width: 100%;
+      }
+      .nosotros__imagen--section {
+        width: 100%;
+      }
+    }
+    .nosotros__intro--section.inspirarte {
+      flex-direction: column-reverse;
+    }
   }
 
   /*SECCION CONTACTO*/

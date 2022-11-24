@@ -741,16 +741,32 @@ main {
   .nosotros__imagen--puente {
     height: auto;
   }
-  .nosotros__intro--section {
+  .conteiner__nosotros .lines__effects {
+    font-size: 25px;
+  }
+  .conteiner__nosotros .lines__effects::after,
+  .conteiner__nosotros .lines__effects::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    top: 4.6em;
+  }
+  .conteiner__nosotros .lines__effects::before {
+    left: 16px;
+  }
+  .conteiner__nosotros .lines__effects::after {
+    right: 16px;
+  }
+  .conteiner__nosotros .nosotros__intro--section {
     flex-direction: column-reverse;
   }
-  .nosotros__intro--section .nosotros__info--section {
+  .conteiner__nosotros .nosotros__intro--section .nosotros__info--section {
     width: 100%;
   }
-  .nosotros__intro--section .nosotros__imagen--section {
+  .conteiner__nosotros .nosotros__intro--section .nosotros__imagen--section {
     width: 100%;
   }
-  .nosotros__intro--section.inspirarte {
+  .conteiner__nosotros .nosotros__intro--section.inspirarte {
     flex-direction: column-reverse;
   }
   /*SECCION CONTACTO*/
