@@ -105,9 +105,9 @@
   width: 45%;
 }
 .conteiner__home .intro__section .info__section .boton__inspirate--index {
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid black;
   background: none;
-  color: rgb(0, 0, 0);
+  color: black;
   cursor: pointer;
   font-size: 15px;
   text-transform: uppercase;
@@ -124,7 +124,7 @@
   left: 0;
   height: 0%;
   width: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   z-index: -1;
   border-radius: 0 0 50% 50%;
   transition: all 0.5s;
@@ -146,7 +146,7 @@
 }
 .conteiner__home .intro__section--idear {
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,7 +164,7 @@
   background-position-y: center;
   background-clip: text;
   -webkit-background-clip: text;
-  font-family: "Anton", sans-serif;
+  font-family: anton;
   -webkit-text-fill-color: transparent;
   line-height: 410px;
 }
@@ -182,13 +182,13 @@
   height: 100px;
 }
 .conteiner__home .tarjetas .div__proyectos .proyectos__texto {
-  color: #fff;
+  color: white;
   text-align: center;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   font-size: 30px;
-  font-family: "Poppins", sans-serif;
+  font-family: poppins;
 }
 .conteiner__home .tarjetas .tajetas__contenedor {
   max-width: 1100px;
@@ -203,7 +203,7 @@
   position: relative;
   overflow: hidden;
   margin: 20px;
-  border: 3px solid #fff;
+  border: 3px solid white;
 }
 .conteiner__home .tarjetas .tajetas__contenedor .info__section--tarjetas .info__section--img {
   width: 100%;
@@ -222,13 +222,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: white;
   transform: scale(0);
   transition: 0.3s ease;
 }
 .conteiner__home .tarjetas .tajetas__contenedor .info__section--tarjetas .capa .capa__enlaces {
   text-decoration: none;
-  color: #fff;
+  color: white;
 }
 
 footer {
@@ -682,7 +682,7 @@ main {
   height: 100px;
 }
 .section__tarjetas .div__proyectos .proyectos__texto {
-  color: #fff;
+  color: white;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -703,7 +703,7 @@ main {
   position: relative;
   overflow: hidden;
   margin: 20px;
-  border: 3px solid #fff;
+  border: 3px solid white;
 }
 .section__tarjetas .tajetas__contenedor .info__section--tarjetas .info__section--img {
   width: 100%;
@@ -722,13 +722,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: white;
   transform: scale(0);
   transition: 0.3s ease;
 }
 .section__tarjetas .tajetas__contenedor .info__section--tarjetas .capa .capa__enlaces {
   text-decoration: none;
-  color: #fff;
+  color: white;
 }
 
 @media screen and (max-width: 968px) {
