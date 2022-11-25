@@ -35,6 +35,28 @@
   }
 
   /*SECCION EQUIPO*/
+
+  .equipo__animacion--txt {
+    .wrapper {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      .static-txt {
+        font-size: 40px;
+      }
+
+      .dynamic-txts {
+        margin: 0;
+
+        .equipo__li {
+          font-size: 30px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
   .equipo__cards--container {
     padding: 0;
 

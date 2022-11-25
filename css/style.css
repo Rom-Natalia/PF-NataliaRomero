@@ -751,6 +751,21 @@ main {
     justify-content: center;
   }
   /*SECCION EQUIPO*/
+  .equipo__animacion--txt .wrapper {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .equipo__animacion--txt .wrapper .static-txt {
+    font-size: 40px;
+  }
+  .equipo__animacion--txt .wrapper .dynamic-txts {
+    margin: 0;
+  }
+  .equipo__animacion--txt .wrapper .dynamic-txts .equipo__li {
+    font-size: 30px;
+    text-align: center;
+  }
   .equipo__cards--container {
     padding: 0;
   }
